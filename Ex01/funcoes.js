@@ -69,3 +69,15 @@ function imc(peso, altura) {
   
 
   //Funções anônimas são aquelas em que o nome da função não é definido, escritas como function() {} ou () => {}
+
+  //PODE OU NÃO RETORNAR UM VALOR
+  //Quando não definimos o return, ela irá retornar undefined. O código interno da função é executado normalmente, independente de existir valor de return ou não.
+
+  function imc(peso, altura) {
+    const imc = peso / (altura ** 2);
+    console.log(imc);
+  }
+  
+  imc(80, 1.80); // retorna o imc
+  console.log(imc(80, 1.80)); // retorna o imc e undefined
+  
