@@ -149,7 +149,7 @@ var possuiDoutorado = false;
 var empregoFuturo;
 var dinheiroNaConta = 0;
 
-console.log(!!nome, !!idade, !!possuiDoutorado, !!empregoFuturo, !!dinheiroNaConta):
+console.log(!!nome, !!idade, !!possuiDoutorado, !!empregoFuturo, !!dinheiroNaConta);
 
 // nome = True              // empregoFuturo = false
 // idade = True             // DinheiroNaConta = false
