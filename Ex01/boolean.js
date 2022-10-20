@@ -124,9 +124,23 @@ false || true; // true
 
 // Verifique se a sua idade é maior do que a de algum parente
 // Dependendo do resultado coloque no console 'É maior', 'É igual' ou 'É menor'
+var minhaIdade = 28;
+var idadePrimo = 32;
+
+if(minhaIdade > idadePrimo ){
+  console.log('E maior');
+} else if(minhaIdade === idadePrimo){
+  console.log('E igual');
+} else{
+  console.log('E menor');
+}
+
 
 // Qual valor é retornado na seguinte expressão?
 var expressao = (5 - 2) && (5 - ' ') && (5 - 2);
+console.log(expressao);
+
+//verdadeiro o valor 
 
 // Verifique se as seguintes variáveis são Truthy ou Falsy
 var nome = 'Andre';
@@ -135,9 +149,22 @@ var possuiDoutorado = false;
 var empregoFuturo;
 var dinheiroNaConta = 0;
 
+console.log(!!nome, !!idade, !!possuiDoutorado, !!empregoFuturo, !!dinheiroNaConta):
+
+// nome = True              // empregoFuturo = false
+// idade = True             // DinheiroNaConta = false
+// possuiDoutorado = false 
+
+
 // Compare o total de habitantes do Brasil com China (valor em milhões)
 var brasil = 207;
 var china = 1340;
+
+if(brasil > china){
+  console.log('brasil tem mais habitantes')
+} else{
+  console.log('brasil tem menos habitante')
+};
 
 // O que irá aparecer no console?
 if(('Gato' === 'gato') && (5 > 2)) {
@@ -145,6 +172,10 @@ if(('Gato' === 'gato') && (5 > 2)) {
 } else {
   console.log('Falso');
 }
+
+// False  Gato tem G diferente 
+//Diferente retorna como False
+
 
 // O que irá aparecer no console?
 if(('Gato' === 'gato') || (5 > 2)) {
