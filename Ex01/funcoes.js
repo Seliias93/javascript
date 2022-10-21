@@ -22,7 +22,7 @@
   var total = 5 * pi(); // 15.7
 
   console.log(pi());
-  
+
 
 //PARÂMETROS E ARGUMENTOS
     //Ao criar uma função, você pode definir parâmetros.
@@ -81,3 +81,91 @@ function imc(peso, altura) {
   imc(80, 1.80); // retorna o imc
   console.log(imc(80, 1.80)); // retorna o imc e undefined
   
+//VALORES RETORNADOS
+//Uma função pode retornar qualquer tipo de dado e até outras funções.
+
+function terceiraIdade(idade) {
+  if(typeof idade !== 'number') {
+    return 'Informe a sua idade!';
+  } else if(idade >= 60) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+//Cuidado, retornar diferentes tipos de dados na mesma função não é uma boa ideia.
+
+//ESCOPO
+//Variáveis e funções definidas dentro de um bloco {}, não são visíveis fora dele.
+
+var totalPaises = 193;
+function precisoVisitar(paisesVisitados) {
+  return `Ainda faltam ${totalPaises - paisesVisitados}paises para visitar`
+}
+console.log(totalPaises); 
+
+// erro, totalPaises não definido
+
+
+//ESCOPO LÉXICO
+//Funções conseguem acessar variáveis que foram criadas no contexto pai
+
+var profissao = 'Designer';
+
+function dados() {
+  var nome = 'André';
+  var idade = 28;
+  function outrosDados() {
+    var endereco = 'Rio de Janeiro';
+    var idade = 29;
+    return `${nome}, ${idade}, ${endereco}, ${profissao}`;
+  }
+  return outrosDados();
+}
+
+console.log(dados()); // Retorna 'André, 29, Rio de Janeiro, Designer' 
+//outrosDados(); // retorna um erro
+
+
+//HOISTING
+//Antes de executar uma função, o JS 'move' todas as funções declaradas para a memória
+
+imc(80, 1.80); // imc aparece no console
+
+function imc(peso, altura) {
+  const imc = peso / (altura ** 2);
+  console.log(imc);
+}
+
+//EXERCÍCIO
+
+// Crie uma função para verificar se um valor é Truthy
+
+// Crie uma função matemática que retorne o perímetro de um quadrado
+// lembrando: perímetro é a soma dos quatro lados do quadrado
+
+// Crie uma função que retorne o seu nome completo
+// ela deve possuir os parâmetros: nome e sobrenome
+
+// Crie uma função que verifica se um número é par
+
+// Crie uma função que retorne o tipo de
+// dado do argumento passado nela (typeof)
+
+// addEventListener é uma função nativa do JavaScript
+// o primeiro parâmetro é o evento que ocorre e o segundo o Callback
+// utilize essa função para mostrar no console o seu nome completo
+// quando o evento 'scroll' ocorrer.
+
+// Corrija o erro abaixo
+function precisoVisitar(paisesVisitados) {
+  var totalPaises = 193;
+  return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
+}
+function jaVisitei(paisesVisitados) {
+  return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
+}
+precisoVisitar(20);
+jaVisitei(20);
