@@ -126,9 +126,16 @@ var menu = {
     //EXERCÍCIO
 // Crie um objeto com os seus dados pessoais
 // Deve possui pelo menos duas propriedades nome e sobrenome
+var dados={
+  nome:'andre',
+  sobrenome: 'Rafael',
+  idade:'Rio de Janeiro',
+}
 
 // Crie um método no objeto anterior, que mostre o seu nome completo
-
+dados.nomeCompleto = function (){
+  return `${this.nome} ${this.sobrenome}`;
+}
 // Modifique o valor da propriedade preco para 3000
 var carro = {
     preco: 1000,
@@ -136,9 +143,24 @@ var carro = {
     marca: 'Audi',
   }
   
+  carro.preco = 3000;
+
   // Crie um objeto de um cachorro que represente um labrador,
   // preto com 10 anos, que late ao ver um homem
   
-  
+  var cachorro = {
+    raca: 'labrador',
+    cor:'preto',
+    idade:'10',
+    latir(pessoa){
+      if(pessoa === 'homem'){
+        return 'Latir';
+      }else {
+        return'nada';
+      }
+    }
+  }
    
-  
+
+  //TUDO É OBJETO
+//Strings, Números, Boolean, Objetos e mais, possuem propriedades e métodos. Por isso são objetos.
