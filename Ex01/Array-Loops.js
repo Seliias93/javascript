@@ -50,4 +50,16 @@ var videoGames = ['Switch', 'PS4', 'XBox', '3DS'];
 for (var i = 0; i < videoGames.length; i++) {
   console.log(videoGames[i]);
 }
+ 
 
+//BREAK
+//O loop irá parar caso encontro e palavra break
+
+var videoGames = ['Switch', 'PS4', 'XBox', '3DS'];
+for (var i = 0; i < videoGames.length; i++) {
+  console.log(videoGames[i]);
+  if(videoGames[i] === 'PS4') {
+    break;
+  }
+}
+  
