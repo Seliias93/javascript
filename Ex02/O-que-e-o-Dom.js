@@ -55,4 +55,4 @@ console.log(linguagem);
 
 // Retorne a largura da janela 
 const windowWidth = window.innerWidth;
-console.log(windowWidth);
+console.log(windowWidth)
