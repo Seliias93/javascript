@@ -104,11 +104,23 @@ Carro.marca.charAt(0) // String
 
 //Verifique o nome do construtor com .constructor.name
 
-// EXERCÍCIOS
+//  EXERCÍCIOS
 // Crie uma função construtora de Pessoas
 // Deve conter nome, sobrenome e idade
 // Crie um método no protótipo que retorne
 // o nome completo da pessoa
+   function Pessoa(nome, sobrenome, idade){
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+    this.idade = idade;
+   }
+
+   Pessoa.prototype.nomeCompleto = function(){
+     return `${this.nome} ${this.sobrenome}`
+
+   }
+
+   const andre2 = new Pessoa('andre', 'rafael', 28);
 
 // Liste os métodos acessados por 
 // dados criados com NodeList,
