@@ -8,8 +8,8 @@ const ano = new String(2018);
 //STR.LENGTH
 //Propriedade com o total de caracteres da string.
 
-const comida = 'Pizza';
-const frase = 'A melhor comida';
+const comida1 = 'Pizza';
+const frase1 = 'A melhor comida';
 
 comida.length; // 5
 frase.length; // 15
@@ -21,7 +21,7 @@ frase[frase.length - 1] // a
 //STR.CHARAT(N)
 //Retorna o caracter de acordo com o index de (n).
 
-const linguagem = 'JavaScript';
+const linguagem1 = 'JavaScript';
 
 linguagem.charAt(0); // J
 linguagem.charAt(2); // v
@@ -30,8 +30,8 @@ linguagem.charAt(linguagem.length - 1); // t
 //STR.CONCAT(STR2, STR3, ...)
 //Concatena as strings e retorna o resultado.
 
-const frase = 'A melhor linguagem é ';
-const linguagem = 'JavaScript';
+const frase2= 'A melhor linguagem é ';
+const linguagem2 = 'JavaScript';
 
 const fraseCompleta = frase.concat(linguagem, '!!');
 
@@ -48,7 +48,7 @@ fruta.includes(listaFrutas); // false
 //STR.ENDSWITH(SEARCH) E STR.STARTSWITH(SEARCH)
 //Procura pela string exata dentro de outra string. A procura é case sensitive.
 
-const fruta = 'Banana';
+const fruta1 = 'Banana';
 
 fruta.endsWith('nana'); // true
 fruta.startsWith('Ba'); // true
@@ -102,14 +102,14 @@ listaPrecos[0].padEnd(10, '.');   // R$ 99.....
 //STR.REPEAT(N)
 //Repete a string (n) vezes.
 
-const frase = 'Ta';
+const frase3 = 'Ta';
 
 frase.repeat(5); // TaTaTaTaTa
 
 //STR.REPLACE(REGEXP|SUBSTR, NEWSTR|FUNCTION)
 //Troca parte da string por outra. Podemos utilizar uma regular expression ou um valor direto. Se usarmos um valor direto ele irá trocar apenas o primeiro valor que encontrar.
 
-let listaItens = 'Camisas Bonés Calças Bermudas Vestidos Saias';
+let listaItens1 = 'Camisas Bonés Calças Bermudas Vestidos Saias';
 listaItens = listaItens.replace(/[ ]+/g, ', ');
 
 let preco = 'R$ 1200,43';
@@ -148,7 +148,7 @@ valor.trimEnd(); // '  R$ 23.00'
 // Utilizando o foreach na array abaixo,
 // some os valores de Taxa e os valores de Recebimento
 
-const transacoes = [
+const transacoes1 = [
     {
       descricao: 'Taxa do Pão',
       valor: 'R$ 39',
@@ -185,5 +185,5 @@ const transacoes = [
   const frase = 'Melhor do ano!';
   
   // Retorne o total de taxas
-  const transacoes = ['Taxa do Banco', '   TAXA DO PÃO', '  taxa do mercado', 'depósito Bancário', 'TARIFA especial'];
+  const transacoes = ['Taxa do Banco', '   TAXA DO PÃO', '  taxa do mercado', 'depósito Bancário',  'TARIFA especial'];
   
