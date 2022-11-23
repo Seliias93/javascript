@@ -191,6 +191,6 @@ let html = `<section>
 // Substitua section por ul e div com li,
 // utilizando split e join
 
-const carros9 = ['Ford', 'Fiat', 'VW', 'Honda'];
+const carros9  = ['Ford', 'Fiat', 'VW', 'Honda'];
 // Remova o último carro, mas antes de remover
 // salve a array original em outra variável
