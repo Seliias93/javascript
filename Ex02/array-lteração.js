@@ -368,3 +368,4 @@ const compras = [
     preco: 'R$ 10,60'
   }
 ]
+ 
