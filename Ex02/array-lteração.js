@@ -311,38 +311,46 @@ const aulasMaiores = aulas.filter((aula) => {
 
 //EXERCÍCIOS
 
-<section class="curso">
-  <h1>Web Design Completo</h1>
-  <p>Este curso é para quem deseja entrar ou já está no mercado de criação de websites.</p>
-  <span class="aulas">80</span>
-  <span class="horas">22</span>
-</section>
-<section class="curso">
-  <h1>WordPress Como CMS</h1>
-  <p>No curso de WordPress Como CMS, você aprende do zero como pegar qualquer site em HTML e torná-lo totalmente gerenciável com a plataforma do WordPress.</p>
-  <span class="aulas">46</span>
-  <span class="horas">9</span>
-</section>
-<section class="curso">
-  <h1>UI Design Avançado</h1>
-  <p>Este é um curso avançado de User Interface Design.</p>
-  <span class="aulas">55</span>
-  <span class="horas">15</span>
-</section>
-
 // Selecione cada curso e retorne uma array
 // com objetos contendo o título, descricao,
 // aulas e horas de cada curso
 
+const cursos = document.querySelectorAll('.curso');
+const ArrayCursos = array.from(cursos);
+
+const objetosCurso = ArrayCursos.map((curso) => {
+  const titulo     = curso.querySelector('h1').innerText;
+  const descricao  = curso.querySelector('p').innerText;
+  const aulas      = curso.querySelector('aulas').innerText;
+  const horas      = curso.querySelector('horas').innerText;
+  return{
+    titulo,
+    descricao,
+    aulas,
+    horas
+  }
+})
+
+console.log(objetosCurso);
+console.log(ArrayCursos);
 
 // Retorne uma lista com os
 // números maiores que 100
-const numeros = [3, 44, 333, 23, 122, 322, 33];
+const numeros11 = [3, 44, 333, 23, 122, 322, 33];
 
+const maioresQue100 = numeros.filter(n => n >100);
+
+console.log(maiorQue100)
 
 // Verifique se Baixo faz parte
 // da lista de instrumentos e retorne true
 const instrumentos = ['Guitarra', 'Baixo', 'Bateria', 'Teclado']
+
+const possuiBaixo = instrumentos.some((item) => {
+  return item === 'baixo';
+})
+
+console.log(possuiBaixo);
 
 
 // Retorne o valor total das compras
@@ -369,3 +377,9 @@ const compras = [
   }
 ]
  
+const valorTotal = compras.reduce((acumulador, item) => {
+  const precoLimpo = +item.preco.replace('R$', '').replace(',', '.');
+  return acumulador + precoLimpo;
+} , 0)
+
+console.log(valorTotal);
