@@ -241,3 +241,4 @@ const configuracao = {
 // Liste o nome de todas
 // as propriedades do
 // protótipo de String e Array
+
