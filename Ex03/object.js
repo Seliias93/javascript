@@ -262,4 +262,4 @@ Object.freeze(configuracao);
 // protótipo de String e Array
 
 console.log(Object.getOwnPropertyNames(String.prototype))
-console.log(Object.getOwnPropertyNames(Array.prototype))
+console.log(Object.getOwnPropertyNames(Array.prototype) )
