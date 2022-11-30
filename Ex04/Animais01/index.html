@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
   <script>document.documentElement.className += ' js';</script>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/geral.css" />
 </head>
 <body>
+  <div class="grid-container">
   <nav class="menu" data-menu="suave">
     <ul>
       <li><a href="#animais">Animais</a></li>
@@ -129,6 +130,22 @@
   <footer class="copy">
     <p>Todos os direitos reservados.</p>
   </footer>
+</div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fecha">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email">
+
+        <label for="Senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+         <button type="submit">Entrar</button>
+      </form>
+    </div>
+
+  </section>
 
   <script src="animacoes.js"></script>
   <script src="script.js"></script>  
