@@ -1,4 +1,3 @@
-
 const botaoAbrir = document.querySelector('[data-modal="abrir"]');
 const botaoFecha = document.querySelector('[data-modal="fecha"]');
 const containerModal = document.querySelector('[data-modal="container"]');
@@ -25,4 +24,3 @@ botaoAbrir.addEventListener('click', abrirModal);
 botaoFecha.addEventListener('click', fechaModal);
 containerModal.addEventListener('click', cliqueForaModal);
 }
-
