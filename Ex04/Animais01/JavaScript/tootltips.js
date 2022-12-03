@@ -7,7 +7,19 @@ tooltips.forEach((item) => {
 
 function onMouseOver(event){
     const tooltipBox = criarTooltipbox(this);
-    console.log(event)
+    tooltipBox.style.top = event.pageY + 'px';
+    tooltipBox.style.left = event.pageX + 'px';
+
+
+    onMouseLeave.tooltipBox = tooltipBox;
+    this.addEventListener('mouseleave' , onMouseLeave);
+}
+
+const onMouseLeave = {
+    tooltipBox: '',
+    handleEvent() {
+        this.tooltipBox.remove();
+    }
 }
 
 function criarTooltipbox(element){
