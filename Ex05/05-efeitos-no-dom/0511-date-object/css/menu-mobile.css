@@ -27,7 +27,7 @@
     height: 2px;
     width: 12px;
     background: #fff;
-    box-shadow: 0 4px #fff, 0 -4px rgba(255, 255, 255, 0.699);
+    box-shadow: 0 4px #fff, 0 -4px #fff;
     transition: transform .3s;
   }
 
