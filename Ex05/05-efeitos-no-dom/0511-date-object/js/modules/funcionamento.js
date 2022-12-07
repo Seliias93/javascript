@@ -13,4 +13,5 @@ export default function initFuncionamento() {
   if(semanaAberto && horarioAberto) {
     funcionamento.classList.add('aberto');
   }
+  
 }
