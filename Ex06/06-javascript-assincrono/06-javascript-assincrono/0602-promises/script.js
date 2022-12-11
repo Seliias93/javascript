@@ -35,7 +35,7 @@ const login = new Promise((resolve) => {
 
 const dados = new Promise((resolve) => {
   setTimeout(() => {
-    resolve('Dados Carregados')
+    resolve('Dados Carregados') 
   }, 1500)
 })
 
