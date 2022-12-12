@@ -40,8 +40,8 @@ const  btcDisplay = document.querySelectorAll('.bt');
 
 function  fectBtc(){
   fectBtc('https:blockchain.info/ticker')
-  .then(responde => )
-}
+  .then(responde =>responde )
+} 
 
 // Utilizando a API https://api.chucknorris.io/jokes/random
 // retorne uma piada randomica do chucknorris, toda vez que
