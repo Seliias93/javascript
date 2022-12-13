@@ -24,6 +24,7 @@ function replaceContent(newText) {
   document.title = newHtml.querySelector('title').innerText;
 }
 
+
 window.addEventListener('popstate', () => {
   fetchPage(window.location.href);
 })
