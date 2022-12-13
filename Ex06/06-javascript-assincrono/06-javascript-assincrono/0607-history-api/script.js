@@ -23,7 +23,7 @@ function replaceContent(newText) {
   oldContent.innerHTML = newContent.innerHTML;
   document.title = newHtml.querySelector('title').innerText;
 }
-
+ 
 
 window.addEventListener('popstate', () => {
   fetchPage(window.location.href);
