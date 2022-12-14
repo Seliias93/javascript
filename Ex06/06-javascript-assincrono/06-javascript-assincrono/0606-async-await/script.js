@@ -5,6 +5,7 @@ async function puxarDados() {
   const jsonDados = await (await responseDados).json();
   const jsonClientes = await (await responseClientes).json();
 
+  
   console.log(jsonDados)
   console.log(jsonClientes)
 }
