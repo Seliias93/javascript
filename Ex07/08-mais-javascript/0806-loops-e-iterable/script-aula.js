@@ -1,4 +1,4 @@
-const frutas = ['Banana', 'Morango', 'Uva'];
+ const frutas = ['Banana', 'Morango', 'Uva'];
 const frase = 'Isso é JavaScript';
 
 for(const fruta of frutas) {
@@ -45,6 +45,7 @@ const btnStyles = getComputedStyle(btnUnico);
 
 for(const style in btnStyles) {
   console.log(`${style}: ${btnStyles[style]}`);
+  
 }
 
 let i = 0;
