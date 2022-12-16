@@ -12,6 +12,7 @@ console.log(priceNumber('R$ 99,99'));
 
 // Como podemos utilizar
 // a função abaixo.
+
 const active = callback => callback();
 
 active(function() {
