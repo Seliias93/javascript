@@ -8,7 +8,9 @@ const limparCPF = (cpf) => {
   return cpf.replace(/\D/g, '');
 }
 
-const construirCPF = (cpf) => {
+const construirCPF = (cpf) =>
+ {
+
   return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, '$1.$2.$3-$4');
 }
 
