@@ -26,6 +26,7 @@
 // </ul>
 // `;
 
+
 // const regexp = /<li/g;
 
 // const resultado = tags.replace(regexp, '$& class="ativa"');
