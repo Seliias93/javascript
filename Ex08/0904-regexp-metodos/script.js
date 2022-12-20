@@ -49,6 +49,7 @@ const resultado = emails.replace(regexp, function(...args) {
   } else {
     return args[0]
   }
+  
 });
 
 console.log(resultado)
