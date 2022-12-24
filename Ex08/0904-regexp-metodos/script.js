@@ -37,6 +37,7 @@ marta@ggmail.com.br
 bruna@oulook.com.br
 andre@origamid.com`
 
+
 const regexp = /(\w+@)([\w.]+)/g
 
 const resultado = emails.replace(regexp, function(...args) {
