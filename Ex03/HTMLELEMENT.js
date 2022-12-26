@@ -26,6 +26,7 @@ div.dataset.tempo = 1000;
 // DOMStringMap {cor: "azul", width: "500", tempo: "1000"}
 
 
+
 //DATA ATRIBUTES
 //Os atributos e valores que começarem com data- poderão ser utilizados como forma de configuração de plugins e interações DOM / JS.
 
