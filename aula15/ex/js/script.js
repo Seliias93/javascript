@@ -5,6 +5,7 @@ const texto = document.getElementById('texto');
 numeroTitulo.innerHTML = numero;
 
 texto.innerHTML = '';
+
 texto.innerHTML += `<p>Raiz quadrada: ${numero ** 0.5}.</p>`;
 texto.innerHTML += `<p>É NaN: ${Number.isNaN(numero)}.</p>`;
 texto.innerHTML += `<p>${numero} é inteiro: ${Number.isInteger(numero)}.</p>`;
