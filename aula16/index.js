@@ -5,6 +5,7 @@ alunos = 123;
 console.log(typeof alunos);
 console.log(alunos instanceof Array);
 
+
 // alunos.push('Luiza');
 // alunos.push('Eduardo');
 
