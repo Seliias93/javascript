@@ -7,6 +7,7 @@ Referência (mutável) - array, object, function - Passados por referência
 const a = {
   nome: 'Luiz',
   sobrenome: 'Otávio'
+  
 };
 const b = a;
 
