@@ -28,14 +28,17 @@ function meuEscopo () {
 
   form.addEventListener('submit', recebeEventoForm);
 }
+
 meuEscopo();
 
 /*
     pessoas.push({
+    
     nome: nome.value,
     sobrenome: sobrenome.value,
     peso: peso.value,
     altura: altura.value
+
    });
-   
-*/
+    
+*/ 
