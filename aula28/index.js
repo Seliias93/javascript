@@ -11,7 +11,7 @@ function formataData(data) {
   const seg = zeroAEsquerda(data.getSeconds());
   const sem  = zeroAEsquerda(data.getday()); // 0 - Domingo, 6 - Sábado
 
-  return `${dia}/${mes}/${ano} ${hora}:${min}:${seg}:${sem}`;
+  return `${dia}/${mes}/${ano} ${hora}:${min}:${seg}/${sem}`;
 }
 
 const data = new Date();

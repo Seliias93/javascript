@@ -1,5 +1,5 @@
 // const h1 = document.querySelector('.container h1');
-// const data = new Date();
+//  const data = new Date();
 
 // function getDiaSemanaTexto(diaSemana) {
 //   const diasSemana = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 
