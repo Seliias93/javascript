@@ -4,13 +4,14 @@ function zeroAEsquerda (num) {
 
 function formataData(data) {
   const dia = zeroAEsquerda(data.getDate());
-  const mes = zeroAEsquerda(data.getMonth() + 1);
+  const mes = zeroAEsquerda(data.getMonth() + 1); //Mês comeca do zero 
   const ano = zeroAEsquerda(data.getFullYear());
   const hora = zeroAEsquerda(data.getHours());
   const min = zeroAEsquerda(data.getMinutes());
   const seg = zeroAEsquerda(data.getSeconds());
+  const sem  = zeroAEsquerda(data.getday()); // 0 - Domingo, 6 - Sábado
 
-  return `${dia}/${mes}/${ano} ${hora}:${min}:${seg}`;
+  return `${dia}/${mes}/${ano} ${hora}:${min}:${seg}:${sem}`;
 }
 
 const data = new Date();
