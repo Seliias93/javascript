@@ -19,6 +19,7 @@ const pessoa = {
 //   console.log(nomes[i]);
 // }
 
+  
 // console.log('####');
 
 // for (let valor of nomes) {
