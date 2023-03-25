@@ -10,6 +10,7 @@
     console.log(criaNome('Luiz'));
   }
 
+  
   falaNome();
   console.log(idade, peso, altura);
 
