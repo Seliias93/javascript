@@ -25,6 +25,7 @@ function criaPessoa(nome, sobrenome, a, p) {
     peso: p,
 
     // Getter
+    
     get imc() {
       const indice = this.peso / (this.altura ** 2);
       return indice.toFixed(2);
