@@ -7,7 +7,7 @@ function criaCalculadora() {
       this.pressionaBackSpace();
       this.pressionaEnter();
     },
-
+ 
     pressionaBackSpace() {
       this.display.addEventListener('keydown', e => {
         if (e.keyCode === 8) {
