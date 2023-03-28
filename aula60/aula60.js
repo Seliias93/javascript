@@ -3,6 +3,7 @@ function recursiva(max) {
   if (max >= 1000) return;
   max++;
   recursiva(max);
-}
+} 
+
 
 recursiva(0);
