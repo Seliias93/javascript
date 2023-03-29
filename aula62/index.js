@@ -6,6 +6,7 @@
 
 // const nome = 'Luiz Otávio Miranda';
 // const nomes = nome.split(' ');
+
 const nomes = [ 'Luiz', 'Otávio', 'Miranda' ];
 const nome = nomes.join(' ');
 console.log(nome);
