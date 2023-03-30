@@ -18,6 +18,7 @@ const pessoas = [
   { nome: 'Rosana', idade: 32 },
   { nome: 'Wallace', idade: 47 },
   
+  
 ];
 const pessoasComNomeGrande = pessoas.filter(obj => obj.nome.length >= 5);
 const pessoasComMaisDeCinquentaAnos = pessoas.filter(obj => obj.idade > 50);
