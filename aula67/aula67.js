@@ -24,3 +24,4 @@ const maisVelha = pessoas.reduce(function(acumulador, valor) {
   return valor;
 });
 console.log(maisVelha);
+
